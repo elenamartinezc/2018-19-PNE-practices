@@ -17,3 +17,6 @@ print("Sequence 1: {}".format(s1))
 print("Sequence 2: {}".format(s2))
 print ("The length of sequence 1: {}".format(l1))
 print ("The length of sequence 2: {}".format(l2))
+
+class Gene(Seq):
+    pass

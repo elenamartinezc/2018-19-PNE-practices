@@ -15,13 +15,13 @@ def count_a(seq):
         elif countert == 'T':
             countert  += 1
 
-    return result
+    return countera,counterc,counterg,countert
 
 dna = input("Please enter the sequence:")
-numberA = count_a(dna)
-numberC = count_c(dna)
-numberG = count_g(dna)
-numberT = count_T(dna)
+numberA = countera(dna)
+numberC = counterc(dna)
+numberG = counterg(dna)
+numberT = countert(dna)
 print ('The number of As is: {}'.format (numberA))
 print ('The number of Cs is: {}'.format (numberC))
 print ('The number of Gs is: {}'.format (numberG))

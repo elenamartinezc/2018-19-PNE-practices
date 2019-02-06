@@ -10,9 +10,9 @@ def count_bases(seq):
             countera += 1
         elif letter == 'C':
             counterc += 1
-        elif counterg == 'G':
+        elif letter == 'G':
             counterg += 1
-        elif countert == 'T':
+        elif letter == 'T':
             countert  += 1
     instances = {'A': countera, 'C': counterc, 'G': counterg, 'T': countert}
 
@@ -20,6 +20,7 @@ def count_bases(seq):
 
 """We ask the user to enter a sequence"""
 seq = input("Please enter the sequence:")
+seq = seq.upper()
 
 """We calculate the length and the percentage"""
 length = len(seq)

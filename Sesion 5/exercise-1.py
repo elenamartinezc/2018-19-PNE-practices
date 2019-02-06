@@ -14,8 +14,9 @@ def count_a(seq):
             counterg += 1
         elif countert == 'T':
             countert  += 1
+    instances = {'A': countera, 'C': counterc, 'G': counterg, 'T': countert}
 
-    return countera,counterc,counterg,countert
+    return instances
 
 dna = input("Please enter the sequence:")
 numberA = countera(dna)

@@ -24,7 +24,7 @@ seq = seq.upper()
 
 """We calculate the length and the percentage"""
 length = len(seq)
-for keys in count_bases(seq).keys():
+for keys in count_bases(seq).keys():+
     if length > 0:
         percentage = round(100.0*count_bases(seq)[keys]/length, 1)
         print('This sequence is', length, 'bases in length', '\n')

@@ -17,24 +17,16 @@ class Seq():
                 complementary += 'G'
             elif base == 'G':
                 complementary += 'C'
-        complementary2 = Seq(complementary)
-        return complementary2
+        return complementary
 
     def reverse(self):
-        reverse = self.strbases [::-1]
-        reverse2 = Seq(reverse)
-        return reverse2
+        return
 
     def count(self,base):
         counting = (self.strbases).count(base)
-        return counting
+
 
     def perc (self, base):
-        length = len(self.strbases)
-        percentage = round(((self.strbases.count(base))/length) * 100, 1)
-        return percentage
-
-
 
 
 

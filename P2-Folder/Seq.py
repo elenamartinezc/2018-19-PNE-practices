@@ -26,9 +26,3 @@ class Seq():
     def count(self, base):
         counting = (self.strbase.count(base))
         return counting
-
-
-    def perc(self, base):
-        length = len(self.strbase)
-        percentage = round(((self.strbase.count(base))/length)*100,1)
-        return percentage

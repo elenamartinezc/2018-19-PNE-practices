@@ -1,0 +1,17 @@
+*Apuntes clase:
+Client-server mode.
+Client starts the communication and it has a request for the server which is listening, and he answers the request. The server can attend lots of clients.
+There’s no direct connection. They’re connected by a network (internet). All the computers connected have a network interface and an IP address, which refers to that network interface.
+
+My phone IP is: 193.147.77.4
+My computer IP is: 172.17.0.1
+Teacher's ID: 212.128.253.64
+
+The command ping is for checking the status of a computer, to see whether the computer we are calling answers or not.
+*ping time to 8.8.8.8: time = 3.56ms
+*ping time to my computer: time = 0.064ms
+You can have an estimation of how far the computer is.
+URL serve as a translation for the IP.
+
+We also have a port, which is a number that identifies the available applications to connect to a web server.
+We will need the Ip address and the port.

@@ -1,5 +1,5 @@
 class Seq():
-    def __init__(selfself,strbase):
+    def __init__(self,strbase):
         self.strbase = strbase
     def len(self):
         return len(self.strbase)

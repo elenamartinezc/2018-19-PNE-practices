@@ -8,17 +8,17 @@ SERVER = 'rest.ensembl.org'
 conn = http.client.HTTPConnection(SERVER, PORT)
 conn.request("GET", "/homology/symbol/human/FRAT1?content-type=application/json")
 r1 = conn.getresponse()
-data1 = r1.read().decode('utf-8')
-answer = json.loads(data1)
+data = r1.read().decode('utf-8')
+answer = json.loads(data)
 id = answer ['data'][0]['id']
 
 conn.request("GET", "/sequence/id/" + id+ "?content-type=application/json")
 r1 = conn.getresponse()
-data1 = r1.read().decode("utf-8")
-answer = json.loads(data1)
-cadena = answer ['seq']
+data = r1.read().decode("utf-8")
+answer = json.loads(data)
+dna = answer ['seq']
 
-s1 = Seq(cadena)
+s1 = Seq(dna)
 print ("Total", s1.len())
 print ("The number of total T:",s1.count('T') )
 print('The maximum number is:', max(s1.count('A'),s1.count('C'),s1.count('G'),s1.count('T')))
